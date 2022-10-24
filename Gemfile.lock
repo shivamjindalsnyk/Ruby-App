@@ -1,51 +1,40 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    activemodel (5.1.1)
-      activesupport (= 5.1.1)
-    activemodel-serializers-xml (1.0.1)
-      activemodel (> 5.x)
-      activerecord (> 5.x)
-      activesupport (> 5.x)
-      builder (~> 3.1)
-    activerecord (5.1.1)
-      activemodel (= 5.1.1)
-      activesupport (= 5.1.1)
-      arel (~> 8.0)
-    activeresource (5.0.0)
-      activemodel (>= 5.0, < 6)
-      activemodel-serializers-xml (~> 1.0)
-      activesupport (>= 5.0, < 6)
-    activesupport (5.1.1)
-      concurrent-ruby (~> 1.0, >= 1.0.2)
-      i18n (~> 0.7)
-      minitest (~> 5.1)
-      tzinfo (~> 1.1)
-    arel (8.0.0)
-    builder (3.2.3)
-    concurrent-ruby (1.0.5)
+    concurrent-ruby (1.1.10)
     dotenv (2.2.1)
+    hash_diff (1.1.1)
     httparty (0.15.5)
       multi_xml (>= 0.5.2)
-    i18n (0.8.4)
-    minitest (5.10.2)
+    jwt (2.5.0)
     multi_xml (0.6.0)
-    mustermann (1.0.0)
-    rack (2.0.3)
-    rack-protection (2.0.0)
+    mustermann (3.0.0)
+      ruby2_keywords (~> 0.0.1)
+    oj (3.13.21)
+    openssl (3.0.1)
+    rack (2.2.4)
+    rack-protection (3.0.2)
       rack
-    shopify_api (4.9.0)
-      activeresource (>= 3.0.0)
-      rack
-    sinatra (2.0.0)
-      mustermann (~> 1.0)
-      rack (~> 2.0)
-      rack-protection (= 2.0.0)
+    ruby2_keywords (0.0.5)
+    securerandom (0.2.0)
+    shopify_api (12.2.1)
+      concurrent-ruby
+      hash_diff
+      httparty
+      jwt
+      oj
+      openssl
+      securerandom
+      sorbet-runtime
+      zeitwerk (~> 2.5)
+    sinatra (3.0.2)
+      mustermann (~> 3.0)
+      rack (~> 2.2, >= 2.2.4)
+      rack-protection (= 3.0.2)
       tilt (~> 2.0)
-    thread_safe (0.3.6)
-    tilt (2.0.7)
-    tzinfo (1.2.3)
-      thread_safe (~> 0.1)
+    sorbet-runtime (0.5.10511)
+    tilt (2.0.11)
+    zeitwerk (2.6.1)
 
 PLATFORMS
   ruby
@@ -57,4 +46,4 @@ DEPENDENCIES
   sinatra
 
 BUNDLED WITH
-   1.15.1
+   1.17.3
