@@ -22,14 +22,20 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
     arel (8.0.0)
+    bigdecimal (3.3.1)
     builder (3.2.3)
     concurrent-ruby (1.0.5)
+    csv (3.3.5)
     dotenv (2.2.1)
-    httparty (0.15.5)
+    httparty (0.24.0)
+      csv
+      mini_mime (>= 1.0.0)
       multi_xml (>= 0.5.2)
     i18n (0.8.4)
+    mini_mime (1.1.5)
     minitest (5.10.2)
-    multi_xml (0.6.0)
+    multi_xml (0.7.1)
+      bigdecimal (~> 3.1)
     mustermann (1.0.0)
     rack (2.0.3)
     rack-protection (2.0.0)
@@ -52,9 +58,9 @@ PLATFORMS
 
 DEPENDENCIES
   dotenv
-  httparty
+  httparty (>= 0.24.0)
   shopify_api
   sinatra
 
 BUNDLED WITH
-   1.15.1
+   2.3.27
